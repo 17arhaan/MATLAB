@@ -1,0 +1,25 @@
+%% 2D LINE
+% figure;
+x = 0:0.1:2*pi;
+y1 = sin(x);
+plot(x,y1);
+hold on;
+y2 = cos(x);
+plot(x,y2);
+hold off;
+legend('Sin(x)','Cos(X)');
+grid on;
+
+%% SUBPLOT
+figure;
+x = 0:0.1:2*pi;
+y1 = sin(x);
+y2 = cos(x);
+subplot(2,)
+plot(x,y1);
+hold on;
+subplot(2,2,1);
+plot(x,y2);
+hold off;
+legend('Sin(x)','Cos(X)');
+grid on;
